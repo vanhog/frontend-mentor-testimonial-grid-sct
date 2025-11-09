@@ -1,0 +1,18 @@
+* {
+  padding: none;
+  margin: none;
+}
+
+header h1 {
+  display: none;
+}
+
+/* Frontend Mentor attribution styles */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
