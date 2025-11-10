@@ -1,10 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* semibold: 600, medium:500 */
+
+:root {
+  --black: #121212;
+  --dark-blue: #19202d;
+  --white: #ffffff;
+  --grey-100: #e7eaee;
+  --grey-200: #cfcfcf;
+  --grey-400: #676d7e;
+  --grey-500: #48556a;
+  --purple-50: #ede4ff;
+  --purple-300: #a775f1;
+  --purple-500: #733fc8;
+}
+
 * {
   padding: none;
   margin: none;
+  border: none;
 }
 
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: var(--grey-100);
+}
+
+.text-preset-1 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: 0;
+  line-height: 1.2;
+}
+
+.text-preset-2 {
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: 0;
+  line-height: 1.1;
+}
+
+.text-preset-3 {
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+
+.text-preset-4 {
+  font-weight: 500;
+  font-size: 0.6875rem;
+  letter-spacing: 0;
+  line-height: 1.1;
+}
+
+li {
+  list-style-type: none;
+}
 header h1 {
   display: none;
+}
+
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 3rem;
+}
+
+.testimonial__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 16rem;
+  gap: 2rem;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 5px;
+  width: 15.0625rem;
+  padding: 2rem;
+}
+
+.card__graduate {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.graduate__image {
+  border-radius: 50%;
+  height: 1.75rem;
+  width: 1.75rem;
+  outline: 2px solid var(--purple-300);
+}
+
+.graduate__name {
+  margin-block-end: 0.25rem;
+}
+
+.card-1 {
+  background-color: var(--purple-500);
+}
+.card-1 .graduate__name {
+  color: var(--white);
+}
+.card-1 .graduate__status {
+  color: var(--purple-50);
+}
+
+.card-1 .card__summary {
+  color: var(--white);
+}
+
+.card-1 .card__testimonial {
+  color: var(--purple-50);
+  margin: 0;
+}
+
+.card-2 {
+  background-color: var(--grey-500);
+}
+.card-2 .graduate__name {
+  color: var(--white);
+}
+.card-2 .graduate__status {
+  color: var(--grey-200);
+}
+
+.card-2 .card__summary {
+  color: var(--white);
+}
+
+.card-2 .card__testimonial {
+  color: var(--grey-100);
+  margin: 0;
+}
+
+.card-3 {
+  background-color: var(--white);
+}
+.card-3 .graduate__name {
+  color: var(--grey-500);
+}
+.card-3 .graduate__status {
+  color: var(--grey-400);
+}
+
+.card-3 .card__summary {
+  color: var(--grey-500);
+}
+
+.card-3 .card__testimonial {
+  color: var(--grey-400);
+  margin: 0;
+}
+
+.card-4 {
+  background-color: var(--dark-blue);
+}
+.card-4 .graduate__name {
+  color: var(--white);
+}
+.card-4 .graduate__status {
+  color: var(--white);
+}
+
+.card-4 .card__summary {
+  color: var(--grey-200);
+}
+
+.card-4 .card__testimonial {
+  color: var(--grey-100);
+  margin: 0;
+}
+
+.card-5 {
+  background-color: var(--white);
+}
+.card-5 .graduate__name {
+  color: var(--grey-500);
+}
+.card-5 .graduate__status {
+  color: var(--grey-200);
+}
+
+.card-5 .card__summary {
+  color: var(--grey-500);
+}
+
+.card-5 .card__testimonial {
+  color: var(--grey-400);
+  margin: 0;
+}
+
+@media screen and (min-width: 48rem) {
+  .testimonial__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40.25rem;
+    gap: 2rem;
+  }
+
+  .card-1 {
+    flex: 1 0 16rem;
+  }
+
+  .card-4 {
+    flex: 1 0 16rem;
+  }
+
+  .card-5 {
+    flex: 1 0 16rem;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  .center-screen {
+    margin-block-start: 13.6875rem;
+  }
+
+  .testimonial__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 72rem;
+    height: 36.375rem;
+  }
+
+  .card-1 {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    width: 29.75rem;
+    height: 14rem;
+  }
+
+  .card-2 {
+    grid-row: 1;
+    grid-column: 3;
+    height: 14rem;
+    width: 12rem;
+  }
+  .card-3 {
+    grid-row: 2;
+    grid-column: 1;
+    width: 12rem;
+    height: 13rem;
+  }
+
+  .card-4 {
+    grid-row: 2;
+    grid-column: 2 / span 2;
+    width: auto;
+    height: 13rem;
+  }
+  .card-5 {
+    grid-row: 1 / span 2;
+    grid-column: 4;
+    height: auto;
+    width: 12rem;
+  }
 }
 
 /* Frontend Mentor attribution styles */
