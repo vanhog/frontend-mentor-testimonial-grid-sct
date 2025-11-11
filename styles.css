@@ -66,13 +66,13 @@ header h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-block-start: 3rem;
+  margin-block-start: 4.5625rem;
 }
 
 .testimonial__container {
   display: flex;
   flex-wrap: wrap;
-  width: 16rem;
+  width: 19.0625rem;
   gap: 2rem;
 }
 
@@ -93,7 +93,25 @@ header h1 {
   border-radius: 50%;
   height: 1.75rem;
   width: 1.75rem;
+}
+
+.graduate__image-1 {
   outline: 2px solid var(--purple-300);
+}
+
+.graduate__image-2 {
+  outline: 2px solid var(--grey-500);
+}
+
+.graduate__image-3 {
+  outline: 2px solid var(--white);
+}
+.graduate__image-4 {
+  outline: 2px solid var(--purple-300);
+}
+
+.graduate__image-5 {
+  outline: 2px solid var(--white);
 }
 
 .graduate__name {
@@ -196,11 +214,18 @@ header h1 {
 }
 
 @media screen and (min-width: 48rem) {
+  .center-screen {
+    margin-block-start: 5.1875rem;
+  }
   .testimonial__container {
     display: flex;
     flex-wrap: wrap;
-    width: 40.25rem;
+    width: 40.4375rem;
     gap: 2rem;
+  }
+
+  .card {
+    width: 15.21875rem;
   }
 
   .card-1 {
@@ -225,7 +250,7 @@ header h1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    width: 72rem;
+    width: 69.625rem;
     height: 36.375rem;
   }
 
@@ -266,6 +291,7 @@ header h1 {
 /* Frontend Mentor attribution styles */
 
 .attribution {
+  margin-block-start: 6rem;
   font-size: 11px;
   text-align: center;
 }
