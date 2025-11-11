@@ -26,6 +26,9 @@ body {
   background-color: var(--grey-100);
 }
 
+p {
+  margin-block-end: 1rem;
+}
 .text-preset-1 {
   font-weight: 600;
   font-size: 1.25rem;
